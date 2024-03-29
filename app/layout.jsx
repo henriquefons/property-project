@@ -1,5 +1,5 @@
 import "@/assets/styles/global.css";
-
+import Navbar from "@/components/Navbar";
 export const metadata = {
   title: "Preperty Pulse | Meta",
   description: "Buy your nice house",
@@ -10,7 +10,8 @@ const MainLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
-        <div>{children}</div>
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );
